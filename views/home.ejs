@@ -1,0 +1,164 @@
+<%- include('partials/header'); -%>
+
+<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="3000">
+      <img src="/images/9.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-sm-block align-middle">
+        <div class="p-3 mb-2 bg-black text-white bg-opacity-50 ">
+          <div class="">
+            <h1 class="display-1" style="font-size: 3vw" id="typewriter"></h1>
+          </div>
+          <script src="typewriter.js"></script>
+          <hr class="border border-bg-light border-3 opacity-100">
+          <h1 class="" style="font-size: 2vw"><span class="orange-text"><%= welcome2 %></span></h1>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="4000">
+        <img src="/images/10.jpg" class="d-block w-100" alt="...">
+        <div class="card-img-overlay">
+          <div class="container text-center">
+              <div class="col1">
+                <h1 class="shadow1" style="font-size: 3vw"><kbd><%= card2 %><span class="orange-text"><%= Orphanages %></span></kbd></h1>
+                <form action="orphanage" method="get">
+                  <button type="submit" class="btn btn-warning btn-lg shadow2"><p style="font-size: 1.5vw;"> View <span class="red-text"><%= Orphanages %></span></p></button>
+              </form>
+              </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+<div class="container my-5 text-center">
+  <div class="row">
+    <div class="col-sm-8">
+      <div class="p-3   mb-2 bg-black text-white bg-opacity-75" style="text-align: justify;">
+        <h1 class="py-4" style="text-align: center;">Our <span class="green-text">Organization</span></h1>
+        <p class="px-4"><%= leftDiv1 %></p>
+        <p class="px-4"><%= leftDiv2 %></p>
+    </div>
+    </div>
+    <div class="col-sm-4">
+
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front shadow2 text-center">
+            <img src="<%= logoUrl %>" class="img-fluid rounded mx-auto d-block shadow1" alt="">
+            <h2 class="py-4" ><%= donate %></h2>
+            <p class="fs-3  px-2"><%= rightDiv1 %></p>
+          </div>
+          <div class="flip-box-back shadow1">
+            <h2 class="py-3 fs-1" ><%= rightDiv2 %></h2>
+            <h4 class=" px-4" style="text-align: justify;"><%= rightDiv3 %></h4>
+            <form action="/donate" method="get">
+              <button type="submit" class="btn btn-success btn-lg">Donate</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+    <div class="container text-center my-4">
+      <div class="row">
+        <div class="col text-success">
+          <hr class="will border border-warning border-5 opacity-75">
+        </div>
+        <div class="col">
+          <p class="fs-1" style="font-family: monospace;"><%= will %> </p>
+        </div>
+        <div class="col">
+          <hr class="border border-success border-5 opacity-75">
+        </div>
+      </div>
+    </div>
+  
+
+
+    <div class="row row-cols-1 row-cols-md-4 g-4 mx-5 my-4 ">
+      <div class="col">
+        <div class="card h-100 shadow2">
+          <img src="<%= two %>" class="card-img-top" alt="...">
+          <div class="card-body">
+            <span class="orange-text fs-4"><p class="card-text"><%= cardDiv1 %></p></span>
+          </div>
+          <div class="card-footer">
+            <small class="text-body-secondary text-success"> <i class="bi bi-currency-rupee"></i>24642.00</small>
+          </div>
+        </div>
+      </div>
+      <div class="col ">
+        <div class="card h-100 shadow1">
+          <img src="<%= three %>" class="card-img-top" alt="...">
+          <div class="card-body">
+            <span class="orange-text fs-4"><p class="card-text"><%= cardDiv2 %></p></span>
+          </div>
+          <div class="card-footer">
+            <small class="text-body-secondary text-success"><i class="bi bi-currency-rupee"></i>246360.00</small>
+          </div>
+        </div>
+      </div>
+      <div class="col ">
+        <div class="card h-100 shadow1">
+          <img src="<%= four %>" class="card-img-top" alt="...">
+          <div class="card-body">
+            <span class="orange-text fs-4"><p class="card-text"><%= cardDiv3 %></p></span>
+          </div>
+          <div class="card-footer">
+            <small class="text-body-secondary text-success"><i class="bi bi-currency-rupee"></i>82130.00</small>
+          </div>
+        </div>
+      </div>
+      <div class="col ">
+        <div class="card h-100 shadow2">
+          <img src="<%= five %>" class="card-img-top" alt="...">
+          <div class="card-body">
+            <span class="orange-text fs-4"><p class="card-text"><%= cardDiv4 %></p></span>
+          </div>
+          <div class="card-footer">
+            <small class="text-body-secondary text-success"><i class="bi bi-currency-rupee"></i>8213.00</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <figure class="text-center px-5 fw-bolder mx-5 py-2 my-5">
+      <blockquote class="blockquote">
+        <div class="w3-panel w3-leftbar w3-light-grey">
+        <p class="w3-xlarge w3-serif">
+         <i> <%= quote %></i>
+        </p>
+      </div>
+      </blockquote>
+    </figure>
+
+    <div class="zoom my-3">
+     <a href="orphanage" class=""><img src="<%= six %>" class="donate img-fluid rounded mx-auto d-block" alt="..."> </a>
+    </div>
+    
+  
+
+
+<%- include('partials/footer'); -%>  

@@ -1,0 +1,282 @@
+body{
+  display: flex;
+  flex-direction: column;
+}
+.navbar-brand{
+    padding-left: 5%;
+}
+.navbar {
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0; 
+    font-size: 12px;
+    letter-spacing: 5px;
+    background: linear-gradient(90deg, rgba(255,165,0,1) 10%, rgba(255,165,0,1) 13%, rgba(244,244,244,1) 100%);
+}
+.navbar-nav  li a:hover {
+    color: #00cb22 !important;
+}
+
+
+li{
+    padding-right:3rem;
+    font-size: 1.3rem;
+   }
+
+
+
+.orange-text {
+    color: orange;
+  }
+
+.red-text {
+  color: #f00;
+}
+
+.green-text {
+    color: green;
+  }
+  
+.fs-2 {
+    font-weight: 900;
+}
+
+.fs-3 {
+  font-weight: 900;
+}
+
+
+/* .flip-box {
+    background-color: transparent;
+    width: 400px;
+    height: 380px;
+    perspective: 1000px;
+  }
+  
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 4px solid green;
+    border-radius: 4%;
+
+  }
+  
+  .flip-box-front {
+    background-color: rgb(0, 0, 0);
+    color:white;
+  }
+ 
+  
+  .flip-box-back {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    transform: rotateY(180deg);
+  } */
+
+  /* Set up the flip box container */
+.flip-box {
+  background-color: transparent;
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+  margin: 0 auto;
+  perspective: 1000px;
+}
+
+/* Set up the inner flip box container */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Set up the front side of the flip box */
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 4%;
+}
+
+/* Set up the front side of the flip box */
+.flip-box-front {
+  background-color: #000000;
+  color: #fff;
+  border: 4px solid green;
+}
+
+/* Set up the back side of the flip box */
+.flip-box-back {
+  background-color: #fff;
+  color: #333;
+  transform: rotateY(180deg);
+  border: 4px solid orange;
+}
+
+/* Set up the hover effect to flip the box */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 480px) {
+  .flip-box {
+    max-width: 100%;
+  }
+}
+
+
+  .shadow1 {
+    box-shadow: 0px 25px 50px orange;
+    text-align: center;
+  }
+  
+  .shadow2 {
+    box-shadow: 0px 25px 50px green;
+    text-align: center;
+  }
+
+  .shadow3 {
+    box-shadow: 0px 25px 20px rgb(0, 0, 0);
+    text-align: center;
+  }
+  
+  .donate {
+    box-shadow: 10px -20px 10px orange;
+    
+  }
+  
+  
+  .zoom {
+  
+    transition: transform .2s;
+    margin: 0 auto;
+  }
+  
+  .zoom:hover {
+    -ms-transform: scale(1.05); /* IE 9 */
+    -webkit-transform: scale(1.05); /* Safari 3-8 */
+    transform: scale(1.05); 
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer-padding {
+	padding-top: 60px;
+}
+
+.footer {
+	position: absolute;
+	text-align: center;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	background-color: #1abc9c;
+}
+
+.footer p {
+	margin-bottom: 25px;
+	font-size: 12px;
+  color: #fff;
+}
+
+
+.parent {
+  height: 100px;
+  border: 5px solid #000;
+  display: flex;
+}
+.child {
+  height: 40px;
+  width: 100%;
+  background: #f00;
+  align-self: flex-end;
+}
+
+
+
+
+.card-img{
+  opacity: 30%;
+  background-size: cover;
+  min-height:  100vh;
+  position: relative;
+}
+
+.card-img-overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.2);
+}
+
+
+.masthead {
+  background-size: cover;
+  min-height:  100vh;
+  position: relative;
+  color: white;
+  text-shadow: 2px 2px 2px rgba(0,0,0,.2);
+}
+
+h1{
+  font-size: 4rem;
+}
+
+.color-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.2);
+}
+
+
+
+ 
+
+.col1 {
+  float: right;
+  margin: 15%;
+  color: white;
+}
+
+
+
+
+
+
+
+
